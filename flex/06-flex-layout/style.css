@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 input {
@@ -24,4 +29,50 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header{
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.right-links{
+  display: flex;
+  margin-left: auto;
+  gap:15px;
+}
+
+.left-links{
+  display: flex;
+  gap:15px;
+  padding: 0px;
+}
+
+/* Elimina el punto adelante de un elemento de la lista*/
+ul{
+  list-style: none;
+}
+/* Elimina el la linea que tienen abajo los links.*/
+
+a{
+  text-decoration: none; 
+  color: rgb(82, 81, 81);
+}
+
+.footer{
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+  background-color: rgb(221, 220, 220);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 0;
 }
